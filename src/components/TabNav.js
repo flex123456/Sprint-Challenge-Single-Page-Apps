@@ -7,7 +7,7 @@ import Home from './Home';
 import {NavLink} from 'react-router-dom'
 
 const panes = [
-  { menuItem: 'Home', render: () => <Tab.Pane><Home/></Tab.Pane> },
+  { menuItem: 'Home', render: () => <NavLink to='/'><Tab.Pane><Home/></Tab.Pane></NavLink> },
   { menuItem: 'Characters', render: () => <Tab.Pane><CharacterList/></Tab.Pane> },
   { menuItem: 'Episodes', render: () => <Tab.Pane><EpisodesList/></Tab.Pane> },
   { menuItem: 'Locations', render: () => <Tab.Pane><LocationsList/></Tab.Pane> },
